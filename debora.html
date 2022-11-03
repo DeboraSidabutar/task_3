@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pengweb 3</title>
+
+    <style>
+      section {
+        margin-bottom: 20px;
+      }
+
+      table,
+      th,
+      tr,
+      td {
+        border: 3px solid black;
+        padding: 15px; 
+        margin: 15px; 
+      }
+      html { 
+        margin: 0;
+        padding: 0;
+        }
+      body { 
+        max-width: 600px;
+        margin: 30px auto;
+        }
+      body {
+         background: url( "walpp.jpg");
+         color: rgb(0, 0, 0);
+        }
+
+      td {
+        padding: 5px;
+      }
+
+      #satu {
+        background-color: rgb(171, 175, 131);
+        padding: 50px
+      }
+
+      #dua {
+        background-color: rgb(69, 104, 62);
+        padding: 50px;
+      }
+
+      #tiga {
+        background-color: rgb(146, 158, 197);
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <h1>Di bawah ini merupakan Test Case Untuk Manipulasi DOM</h1>
+    <br>
+  <body>
+    <div class="main">
+      <section id="satu">
+        <h3>1. Membuat teks kedalam id/class html tertentu. </h1>
+        <p>Menambahkan teks ke dalam &ltinput/&gt dan &ltp&gt.</p>
+        <input type="text" name="teks" id="inpSatu" />
+        <p
+          id="pSatu"
+          style="border: 1px solid black; width: 500px; height: 100px"
+        ></p>
+      </section>
+      
+      <section id="dua">
+        <h3>2. Menambahkan element html ke dalam id/class html tertentu</h1>
+        <p>Menambahkan row baru ke dalam table.</p>
+        <table style="border-collapse: collapse; border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Alamat</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyDua">
+            <tr>
+              <td>Debora Sidabutar</td>
+              <td>SIDAMANIK</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="tiga">
+        <h3>
+          3. Membuat element yang dinamis berdasarkan event handler tertentu
+        </h2>
+        <p>Berpindah halaman setelah button click.</p>
+        <button id="btnTiga" style="margin-bottom: 10px">Tekan</button>
+      </section>
+    </div>
+    <script src="DOM.js"></script>
+  </body>
+</html>
